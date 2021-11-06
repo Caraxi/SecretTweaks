@@ -8,6 +8,6 @@ namespace SecretTweaks {
 
         public override bool AlwaysEnabled => true;
 
-        public override string Name => "Secret Blah";
+        public override string Name => "Secret";
     }
 }
