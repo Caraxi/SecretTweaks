@@ -2,7 +2,7 @@
 
 namespace SecretTweaks {
     public class DozeSnap : SecretTweaks.SubTweak {
-        public override string Name => "No Doze Snap";
+        public override string Name => "Disable Doze Snap";
         private delegate bool ShouldSnap();
         private HookWrapper<ShouldSnap> shouldSnapHook;
 

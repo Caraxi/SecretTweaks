@@ -6,8 +6,6 @@ namespace SecretTweaks {
             public override string Key => $"{nameof(SecretTweaks)}@{base.Key}";
         }
 
-        public override bool AlwaysEnabled => true;
-
         public override string Name => "Secret";
     }
 }
