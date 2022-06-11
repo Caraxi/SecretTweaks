@@ -1,4 +1,4 @@
-﻿using SimpleTweaksPlugin.Helper;
+﻿using SimpleTweaksPlugin.Utility;
 
 namespace SecretTweaks {
     public class DozeSnap : SecretTweaks.SubTweak {
@@ -7,7 +7,7 @@ namespace SecretTweaks {
         private HookWrapper<ShouldSnap> shouldSnapHook;
 
         public override void Enable() {
-            shouldSnapHook ??= Common.Hook<ShouldSnap>("E8 ?? ?? ?? ?? 84 C0 74 46 4C 8D 6D C7", ShouldSnapDetour);
+            shouldSnapHook ??= Common.Hook<ShouldSnap>("E8 ?? ?? ?? ?? 84 C0 74 44 4C 8D 6D C7", ShouldSnapDetour);
             shouldSnapHook?.Enable();
             base.Enable();
         }
