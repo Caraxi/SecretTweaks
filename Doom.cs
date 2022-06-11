@@ -8,6 +8,11 @@ using SimpleTweaksPlugin;
 
 namespace SecretTweaks; 
 
+/// <summary>
+/// Based on a tweet: https://twitter.com/blinry/status/1533443430679990272
+/// </summary>
+
+
 public static class Doom {
 
     private static double[] cam = { 7.7, 1.8 };
