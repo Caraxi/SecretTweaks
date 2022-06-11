@@ -90,7 +90,7 @@ public static class Doom {
           
             if ((i == 32 || i == 31) && pressed[32]) {
 
-                for (var index = 0; index < enemies.Length; i++) {
+                for (var index = 0; index < enemies.Length; index++) {
                     var e = enemies[index];
                     var inter = intersect2(cam[0], cam[1], end[0], end[1], e[0], e[1], 0.3);
                     if (inter is { Length: > 0 }) {
