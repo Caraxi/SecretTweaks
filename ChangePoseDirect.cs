@@ -15,7 +15,7 @@ namespace SecretTweaks;
 public unsafe class ChangePoseDirect : SecretTweaks.SubTweak {
     private delegate byte ProcessChatInputDelegate(UIModule* uiModule, byte** a2, nint a3);
 
-    [TweakHook, Signature("E8 ?? ?? ?? ?? FE 86 ?? ?? ?? ?? C7 86", DetourName = nameof(ProcessChatDetour))]
+    [TweakHook, Signature("E8 ?? ?? ?? ?? FE 87 ?? ?? ?? ?? C7 87", DetourName = nameof(ProcessChatDetour))]
     private HookWrapper<ProcessChatInputDelegate> processChatHook = null!;
 
     private void ChangePose(EmoteController.PoseType poseType, byte poseNum, bool changingPose, ref bool abort, bool noErrorMessage = false) {
